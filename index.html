@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#16335B" />
+  <title>上房方征 · 人才招聘</title>
+  <meta name="description" content="上房方征（Startmarch Holdings）招聘 — 成为受人尊重的城市服务供应商。查看职位并投递简历。" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 顶部品牌栏 -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-cn">上房方征</span>
+        <span class="brand-en">Startmarch Holdings</span>
+      </div>
+      <a class="topbar-cta" href="#apply">投递简历</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo">
+        <!-- 替换 logo：把真实 logo 放到项目根目录 logo.png 即可自动显示；未提供时显示占位徽标 -->
+        <img id="hero-logo" src="logo.png" alt="上房方征"
+             onerror="this.style.display='none'; document.getElementById('hero-logo-fallback').style.display='block';" />
+        <span id="hero-logo-fallback" class="hero-logo-fallback" style="display:none;" aria-label="上房方征">
+          <svg viewBox="0 0 48 48" width="60" height="60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="24" fill="#C8A15A"/>
+            <path d="M16 30 L24 18 L32 30" fill="none" stroke="#16335B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="18" y1="34.5" x2="30" y2="34.5" stroke="#16335B" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </div>
+      <p class="hero-kicker">城市服务 · 长期主义</p>
+      <h1 class="hero-title">成为受人尊重的<br />城市服务供应商</h1>
+      <p class="hero-desc">从业四十年，以社会认同、客户尊重、员工自豪为标尺，与城市共同生长。</p>
+      <a class="hero-btn" href="#jobs">查看在招职位</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- 关于我们 -->
+    <section class="block" id="about">
+      <h2 class="block-title"><span class="bar"></span>关于我们</h2>
+
+      <p class="about-lead">上房方征投资管理（上海）有限公司（以下简称"上房方征"）从1987年为政府机关特种物业提供服务起步，逐步成长为不动产投资与资产管理、住宅与产业物业服务、停车场运营、电梯传动设备安装运维等相关业务的企业集团，多年来一直致力于成为国内一家独具价值的城市服务供应商。目前旗下控股及关联企业主要有上海上房物业服务股份有限公司、上海尚安智慧停车发展有限公司、上海上物房屋经租管理有限公司和上海车城物业管理有限公司、上海瑞生电梯有限公司、成都浦江置业有限公司等。</p>
+
+      <h3 class="about-sub">上房方征旗下代表企业介绍</h3>
+
+      <div class="company-card">
+        <div class="company-name">上海上房物业服务股份有限公司</div>
+        <div class="company-en">上房服务</div>
+        <p>一家以物业管理为核心、多元化发展的综合性服务企业，主营业务涵盖商业地产、医疗机构、教育机构、文化体育场馆等产业物业支援服务、餐饮团膳服务，致力于为客户提供全方位、一体化的整合支援服务。</p>
+        <p>业务版图以上海为起点，拓展至江苏、浙江、四川等多个省市，形成了辐射全国的服务网络，已签约项目超过200个。</p>
+      </div>
+
+      <div class="company-card">
+        <div class="company-name">上海尚安智慧停车发展有限公司</div>
+        <div class="company-en">尚安停车</div>
+        <p>一家专业静态交通运营企业，业务贯穿投资投建、规划设计、经营管理、咨询顾问、智能系统开发等全产业链环节，为各类停车设施提供全生命周期的服务支持。</p>
+        <p>致力于将先进的静态交通服务理念与智能停车管理技术相结合，为上海、浙江、江苏、四川等地逾15万个车位提供运营管理、规划设计、顾问咨询等服务。</p>
+      </div>
+    </section>
+
+    <!-- 招聘职位 -->
+    <section class="block" id="jobs">
+      <h2 class="block-title"><span class="bar"></span>在招职位</h2>
+      <p class="block-hint">点击卡片查看岗位职责与任职要求</p>
+      <div id="job-list" class="job-list"><!-- 由 js/jobs.js 渲染 --></div>
+    </section>
+
+    <!-- 简历投递 -->
+    <section class="block" id="apply">
+      <h2 class="block-title"><span class="bar"></span>投递简历</h2>
+      <p class="block-hint">请填写基本信息并上传简历，我们会在收到后尽快与您联系。</p>
+
+      <form id="apply-form" class="apply-form" novalidate enctype="multipart/form-data" target="_sf_iframe">
+        <!-- Formsubmit 隐藏配置：关闭内置人机验证，邮件以表格模板呈现 -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_subject" value="上房方征招聘简历投递" />
+        <div class="field">
+          <label for="name">姓名 <span class="req">*</span></label>
+          <input type="text" id="name" name="name" placeholder="请输入真实姓名" autocomplete="name" />
+          <small class="err" data-for="name"></small>
+        </div>
+
+        <div class="field row">
+          <div class="col">
+            <label for="gender">性别 <span class="req">*</span></label>
+            <select id="gender" name="gender">
+              <option value="">请选择</option>
+              <option value="男">男</option>
+              <option value="女">女</option>
+            </select>
+            <small class="err" data-for="gender"></small>
+          </div>
+          <div class="col">
+            <label for="birth">出生年月 <span class="req">*</span></label>
+            <input type="month" id="birth" name="birth" />
+            <small class="err" data-for="birth"></small>
+          </div>
+        </div>
+
+        <div class="field row">
+          <div class="col">
+            <label for="phone">手机号 <span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="11 位手机号" inputmode="numeric" autocomplete="tel" />
+            <small class="err" data-for="phone"></small>
+          </div>
+          <div class="col">
+            <label for="email">邮箱 <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" />
+            <small class="err" data-for="email"></small>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="position">应聘岗位 <span class="req">*</span></label>
+          <select id="position" name="position">
+            <option value="">请选择岗位</option>
+            <!-- 由 jobs.js 填充 -->
+          </select>
+          <small class="err" data-for="position"></small>
+        </div>
+
+        <div class="field row">
+          <div class="col">
+            <label for="education">最高学历 <span class="req">*</span></label>
+            <select id="education" name="education">
+              <option value="">请选择</option>
+              <option value="高中及以下">高中及以下</option>
+              <option value="大专">大专</option>
+              <option value="本科">本科</option>
+              <option value="硕士">硕士</option>
+              <option value="博士">博士</option>
+            </select>
+            <small class="err" data-for="education"></small>
+          </div>
+          <div class="col">
+            <label for="city">现居城市</label>
+            <input type="text" id="city" name="city" placeholder="如：上海" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="expected_salary">期望薪资</label>
+          <input type="text" id="expected_salary" name="expected_salary" placeholder="如：8-12K / 面议" />
+        </div>
+
+        <div class="field">
+          <label for="experience">工作经历 <span class="req">*</span></label>
+          <textarea id="experience" name="experience" rows="3" placeholder="请简述最近的工作经历与年限"></textarea>
+          <small class="err" data-for="experience"></small>
+        </div>
+
+        <div class="field">
+          <label for="intro">自我介绍</label>
+          <textarea id="intro" name="intro" rows="3" placeholder="一句话说说你的优势与求职意向（选填）"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="resume">上传简历 <span class="req">*</span></label>
+          <div class="file-box">
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" />
+            <p class="file-tip">支持 PDF / Word，单个文件不超过 10MB</p>
+          </div>
+          <small class="err" data-for="resume"></small>
+        </div>
+
+        <button type="submit" id="submit-btn" class="submit-btn">提交投递</button>
+        <p id="form-msg" class="form-msg" role="alert"></p>
+      </form>
+
+      <!-- 隐藏 iframe：承接表单提交响应，避免整页跳转，同时保证简历附件被 Formsubmit 正常收取 -->
+      <iframe id="_sf_iframe" name="_sf_iframe" title="formsubmit" style="position:absolute;width:0;height:0;border:0;left:-9999px;" aria-hidden="true"></iframe>
+
+      <!-- 成功卡片 -->
+      <div id="success-card" class="success-card hidden">
+        <div class="success-icon">✓</div>
+        <h3>投递成功</h3>
+        <p>我们已收到您的简历，感谢您对上房方征的关注，我们会尽快与您联系。</p>
+        <button type="button" id="again-btn" class="ghost-btn">再投一份</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-brand">上房方征 · Startmarch Holdings</p>
+      <p class="footer-line">成为受人尊重的城市服务供应商</p>
+      <p class="footer-line">关注微信公众号「上房方征」了解更多</p>
+      <p class="footer-copy">© <span id="year"></span> 上房方征 保留所有权利</p>
+    </div>
+  </footer>
+
+  <script src="js/jobs.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
