@@ -91,7 +91,7 @@ a { color: inherit; text-decoration: none; }
 }
 .hero-content { position: relative; padding: 30px 22px 32px; }
 .hero-logo { display: flex; justify-content: center; margin-bottom: 20px; }
-.hero-logo img { height: 66px; width: auto; border-radius: 12px; object-fit: contain; }
+.hero-logo img { height: 170px; width: auto; border-radius: 12px; object-fit: contain; }
 .hero-logo-fallback { line-height: 0; }
 .hero-kicker {
   display: inline-block;
